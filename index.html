@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz - Home</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- basic sans -->
+    <link rel="stylesheet" href="https://use.typekit.net/orh2tma.css">
+    <!-- favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logoo.svg">
+</head>
+<body>
+    <h1 class="visually-hidden">Orbitz Homepage</h1>
+    <header>
+        <section class="grid-con center-grid-con" id="header-con">
+            <h2 class="visually-hidden">Orbitz Website Header</h2>
+            <div class="col-span-2 m-col-span-3" id="logo">
+                <img src="images/logoo.svg" alt="Orbitz logo">
+            </div>
+            <nav class="col-start-4 col-end-5 m-col-span-7">
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul id="nav-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Where to Buy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="m-col-span-1" id="cart">
+                <img src="images/cart-icon.svg" alt="shopping cart">
+            </div>
+            <div class="m-col-span-1" id="pfp">
+                <img src="images/sign-in.svg" alt="default profile picture">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="full-width-grid-con" id="hero">
+            <h2 class="visually-hidden">Hero Section</h2>
+            <img
+            sizes="(max-width: 1980px) 100vw, 1980px"
+            srcset="
+            images/strawberry-3-19_uy9wrc_c_scale,w_300.png 300w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_661.png 661w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_916.png 916w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1121.png 1121w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1299.png 1299w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1464.png 1464w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1616.png 1616w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1763.png 1763w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1893.png 1893w,
+            images/strawberry-3-19_uy9wrc_c_scale,w_1980.png 1980w"
+            src="strawberry-3-19_uy9wrc_c_scale,w_1980.png"
+            alt="Solar Strawberry Orbitz Bottle" id="hero-image">
+
+            <section id="nested-hero-grid" class="grid-con">
+                <div class="col-start-3 col-end-5 m-col-start-7 m-col-end-13" id="hero-text">
+                    <h3>Blast off with Orbitz!</h3>
+                    <p>The drink from the future!</p>
+                </div>
+                <div class="col-start-3 col-end-5 m-col-start-7 m-col-end-13" id="hero-shop-now">
+                    <p><a href="#">Shop Now</a></p>
+                </div>
+            </section>
+        </section>
+
+        <section id="welcome" class="grid-con center-grid-con">
+            <div class="box col-span-1 m-col-start-2 m-col-end-5"></div>
+            <div class="col-span-3 m-col-span-8">
+                <h3>Welcome to Orbitz!</h3>
+                <p>The soda that launches your taste buds into another galaxy. Packed with explosive flavour and cosmic-level fizz, Orbitz isn’t just a drink. It’s a full-blown flavour mission.
+                Buckle up. Pop the cap. Prepare for liftoff.</p>
+            </div>
+        </section>
+
+        <section class="grid-con center-grid-con">
+            
+        </section>
+
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
