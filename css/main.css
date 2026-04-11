@@ -89,7 +89,7 @@ header{
    justify-self: center;
    object-fit: cover;
    object-position: center;
-   filter: contrast(150%);
+   /* filter: contrast(150%); */
    z-index: -1;
 
 }
@@ -204,6 +204,16 @@ header{
 
     #hero-shop-now a{
         font-size: 20px;
+    }
+
+
+    /* ------------ PRODUCTS PAGE -------------- */
+    #multipacks{
+        display: block;
+    }
+
+    #merch{
+        display: block;
     }
 }
 
