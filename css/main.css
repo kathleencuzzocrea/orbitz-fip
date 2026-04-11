@@ -8,6 +8,7 @@
 
 body {
     font-family: 'basic sans', sans-serif;
+    color:#32327b
 }
 
 h2, h3, h4, h5, h6 {
@@ -20,6 +21,10 @@ justify-self: center;
 
 .hidden-box{
    display:none;
+}
+
+.justify-right{
+    text-align: right;
 }
 
 /* --2-- Header ----------------------*/
@@ -149,6 +154,96 @@ header{
 
 /* --4-- Bottle Info Hotspots Section ----------------------- */
 
+/* ---------- ABOUT PAGE ------------------ */
+
+.about-hero-text h2{
+    font-size: 40px;
+    font-family: 'bagel fat', sans-serif;
+    color: white;
+}
+
+.about-hero-text h2:nth-of-type(2){
+    text-align: right;
+}
+
+.about-h{
+    padding: 40px;
+}
+
+#about-us{
+    align-self: center;
+    line-height: 30px;
+}
+
+#about-us h2{
+    margin-bottom: 20px;
+}
+
+#step-in{
+    align-self: center;
+    line-height: 30px;
+}
+
+#history-96{
+    display: flex;
+}
+
+#history-96 p{
+    align-self: center;
+}
+
+#history-97{
+    display: flex;
+}
+
+#history-97 p{
+    align-self: center;
+}
+
+#history-99{
+    display: flex;
+}
+
+#history-99 p{
+    align-self: center;
+}
+
+#history-26{
+    display: flex;
+}
+
+#history-26 p{
+    align-self: center;
+}
+
+#star-97{
+    order: 1;
+}
+
+#star-26{
+    order: 1;
+}
+
+.info-card{
+    display: flex;
+    background-color: #f1e902;
+    border-radius: 30px;
+}
+
+.drop-zone-card{
+    display: flex;
+}
+
+/* from https://css-generators.com/wavy-circle/ */
+.wavy-circle {
+  --s: 100px; /* adjust to control the size */
+    background-color: #3d62ad;
+  width: var(--s); 
+  aspect-ratio: 1;
+  --g:/calc(var(--s)*0.262) calc(var(--s)*0.262) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
+  mask: calc(50% + var(--s)*0.197) calc(50% + var(--s)*0.271) var(--g),calc(50% + var(--s)*-0.197) calc(50% + var(--s)*0.271) var(--g),calc(50% + var(--s)*-0.319) calc(50% + var(--s)*-0.104) var(--g),calc(50% + var(--s)*0) calc(50% + var(--s)*-0.335) var(--g),calc(50% + var(--s)*0.319) calc(50% + var(--s)*-0.104) var(--g),radial-gradient(calc(var(--s)*0.371),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0) calc(50% + var(--s)*0.443) var(--g),calc(50% + var(--s)*-0.422) calc(50% + var(--s)*0.137) var(--g),calc(50% + var(--s)*-0.261) calc(50% + var(--s)*-0.359) var(--g),calc(50% + var(--s)*0.261) calc(50% + var(--s)*-0.359) var(--g),calc(50% + var(--s)*0.422) calc(50% + var(--s)*0.137) var(--g);
+}
+
 /* --- Tablet Media Queries -------------------------*/
 
 @media screen and (min-width: 768px) {
@@ -214,6 +309,20 @@ header{
 
     #merch{
         display: block;
+    }
+
+    /* ------------ ABOUT PAGE ------------------ */
+
+    #about-star{
+        display: block;
+    }
+
+    #star-97{
+        order: 0;
+    }
+
+    #star-26{
+        order: 0;
     }
 }
 
