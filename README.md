@@ -1,7 +1,7 @@
 # Orbitz Rebrand Website
 This is the repository for my IDP Term 2 Final Integrated Project, the Orbitz rebrand website.
 
-![orbitz fun poster](images/fun-figma_p3rprr_c_scale,w_674.png);
+![orbitz fun poster](images/fun-figma_p3rprr_c_scale,w_674.png)
 
 ## Installation 💻
 None required, simply download .zip file and extract.
