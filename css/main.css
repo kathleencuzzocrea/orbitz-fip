@@ -15,6 +15,10 @@ h2, h3, h4, h5, h6 {
     font-family: 'bagel fat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .center-box{
 justify-self: center;
 }
@@ -75,6 +79,7 @@ justify-self: center;
 
 #logo{
     padding: 50px;
+    cursor: pointer;
 }
 
 #header-con{
@@ -114,10 +119,11 @@ header{
 
 #nested-hero-grid p{
     text-align: right;
+    padding-top: 30px;
     color: white;
 }
 
-#hero-shop-now a{
+/* #hero-shop-now a{
     background-color: white;
     border-radius: 20px;
     padding: 20px;
@@ -126,6 +132,22 @@ header{
     color: #32327b;
     align-self: end;
     border: 5px solid #32327b
+} */
+
+#hero-button{
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 100px;
+    padding: 10px;
+    grid-row: 2/3;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+#hero-button a{
+    text-decoration: none;
+    color: #32327b;
 }
 
 @keyframes border-colour{
@@ -136,9 +158,10 @@ header{
     100%{border: 5px solid #32327b}
 }
 
-#hero-shop-now a:hover{
+#hero-button:hover{
     animation: border-colour 1s ease-in-out;
     animation-iteration-count: infinite;
+    cursor:pointer;
 }
 
 #hero-text{
@@ -146,16 +169,228 @@ header{
     text-shadow: 3px 3px 2px #32327b;
 }
 
-#hero-text p{
-    font-size: 20px;
+#hero-text h3{
+    text-align: left;
+    font-size: 70px;
 }
 
-/* --3-- Welcome Section ------------------------------- */
+#hero-text p{
+    font-size: 20px;
+    text-align: left;
+}
 
-/* --4-- Bottle Info Hotspots Section ----------------------- */
+#welcome{
+    background-color: #32327b;
+    color: white;
+}
 
+#welcome div > h2{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#welcome div > p {
+    line-height: 30px;
+}
+
+.hidden-star{
+    display: none;
+    align-self: center;
+}
+
+#home-welcome{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#why-choose-orbitz{
+    background-color: #ed1a60;
+    color: white;
+}
+
+#why-choose-orbitz div {
+    align-self: center;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#why-choose-orbitz h2{
+    padding: 0px;
+}
+
+.product-box-home{
+    border: 8px solid #32327b;
+    margin-bottom: 30px;
+    border-radius: 500px 500px 20px 20px;
+    transition: all .5s ease-in-out;
+}
+
+.product-box-home h3{
+    padding: 10px;
+    text-align: center;
+}
+
+#blueberry-card-home:hover{
+    box-shadow: inset 0px -700px 0 0 #3d62ad;
+    color: white;
+    transform: translateY(-10px);
+    border-color: #3d62ad;
+}
+
+#strawberry-card-home:hover{
+    box-shadow: inset 0px -700px 0 0 #ed1a60;
+    color: white;
+    transform: translateY(-10px);
+    border-color: #ed1a60;
+}
+
+#orange-card-home:hover{
+    box-shadow: inset 0px -700px 0 0 #f47a20;
+    color: white;
+    transform: translateY(-10px);
+    border-color: #f47a20;
+}
+
+#lemon-card-home:hover{
+    box-shadow: inset 0px -700px 0 0 #f1e902;
+    transform: translateY(-10px);
+    border-color: #f1e902;
+}
+
+#shop-now{
+    background-color: #32327b;
+    border-radius: 50px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 40px;
+    transition: all .1s ease-in-out;
+}
+
+#shop-now:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+#shop-now a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#any-occasion{
+    background-color: #f47a20;
+    color: white;
+    padding: 30px 15px;
+    line-height: 30px;
+}
+
+#any-occasion div{
+    align-self: center;
+}
+
+#any-occasion h2{
+    padding: 0;
+}
+
+#join-the-crew h3{
+    padding: 20px 0px;
+}
+
+#join-the-crew p{
+    line-height: 30px;
+}
+
+#join-the-crew{
+    margin-bottom: 50px;
+}
+
+#astro-join{
+    border-radius: 500px 500px 20px 20px;
+    margin: 30px;
+    align-self: center;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input, textarea{
+    padding: 15px;
+    border-radius: 50px;
+    height: 60px;
+    font-family: 'basic sans', sans-serif;
+    border: 5px solid #32327b;
+    background-color: #ffffff;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#name{
+    grid-column: 1/5;
+    border-color: #3d62ad;
+    background-color: rgba(61, 98, 173, 0.25);
+    cursor: pointer;
+}
+
+#email{
+    grid-column: 1/5;
+    border-color: #ed1a60;
+    background-color: rgba(237, 26, 96, 0.25);
+    cursor: pointer;
+}
+
+#phone-number{
+    grid-column: 1/5;
+    border-color: #f47a20;
+    background-color: rgba(244, 122, 32, 0.25);
+    cursor: pointer;
+}
+
+#transmission{
+    grid-column: 1/5;
+    border-color: #f1e902;
+    background-color: rgba(241, 233, 2, 0.25);
+    cursor: pointer;
+    height: 120px;
+    border-radius: 30px;
+}
+
+#blast-off{
+    grid-column: 3/5;
+}
+
+#blast-off:hover{
+    transform: translateY(-10px);
+     animation: border-colour 1s ease-in-out;
+    animation-iteration-count: infinite;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+    animation-duration: 3s;
+}
+
+#form-reset{
+    grid-column: 1/2;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#form-reset:hover{
+    background-color: #32327b;
+    color: white;
+}
 
 /* ---------- PRODUCTS PAGE -------------------------- */
+
+#products-hero-text{
+    color:white;
+}
+
 .product-card{
     padding: 100px 50px 20px 50px;
     margin: 15px;
@@ -443,6 +678,11 @@ div#galaxy-pack-info-card span {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 50px;
+    font-family: 'basic sans', sans-serif;
+}
+
+.merch-card .quantity{
+    color:#32327b;
 }
 
 .merch-card .add-to-cart{
@@ -665,6 +905,22 @@ div#galaxy-pack-info-card span {
   mask: calc(50% + var(--s)*0.197) calc(50% + var(--s)*0.271) var(--g),calc(50% + var(--s)*-0.197) calc(50% + var(--s)*0.271) var(--g),calc(50% + var(--s)*-0.319) calc(50% + var(--s)*-0.104) var(--g),calc(50% + var(--s)*0) calc(50% + var(--s)*-0.335) var(--g),calc(50% + var(--s)*0.319) calc(50% + var(--s)*-0.104) var(--g),radial-gradient(calc(var(--s)*0.371),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0) calc(50% + var(--s)*0.443) var(--g),calc(50% + var(--s)*-0.422) calc(50% + var(--s)*0.137) var(--g),calc(50% + var(--s)*-0.261) calc(50% + var(--s)*-0.359) var(--g),calc(50% + var(--s)*0.261) calc(50% + var(--s)*-0.359) var(--g),calc(50% + var(--s)*0.422) calc(50% + var(--s)*0.137) var(--g);
 }
 
+/* from https://css-shape.com/star/ */
+.star {
+  width: 300px;  
+  aspect-ratio: 1;
+  background: #F8CA00;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+  /* or more simple
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+   */
+}
+
 /* --- Footer ------------------------- */
 footer{
     padding-top: 20px;
@@ -696,6 +952,10 @@ footer ul li a {
 
 @media screen and (min-width: 768px) {
     
+    .hidden-box{
+        display: block;
+    }
+
     /* Tablet header */
     #cart{
         display: block;
@@ -745,17 +1005,48 @@ footer ul li a {
     }
 
     #nested-hero-grid h3{
-        font-size: 50px;
+        font-size: 40px;
+        letter-spacing: normal;
     }
 
     #hero-text p{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #hero-shop-now a{
         font-size: 20px;
     }
 
+    .hidden-star{
+        display: block;
+    }
+
+    #hero-button{
+        display: block;
+    }
+    
+    #why-choose-orbitz div{
+        padding: 0px;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-column-gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    input, textarea{
+        padding: 15px;
+        border-radius: 50px;
+        height: 60px;
+        font-family: 'basic sans', sans-serif;
+        border: 5px solid #32327b;
+        background-color: #ffffff;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
 
     /* ------------ PRODUCTS PAGE -------------- */
     #multipacks{
