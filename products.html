@@ -97,6 +97,7 @@
                 <button class="classic">Classic</button>
                 <button class="zero-sugar">Zero Sugar</button>
             </div>
+
             <div class="col-span-full m-col-start-7 m-col-end-13 product-card" id="strawberry-product-card">
                 <h4>Solar Strawberry</h4>
                 <p>A stellar explosion of sweet strawberry flavor that bursts with energy. Bright, juicy, and impossible to ignore, this flavor lights up your taste buds.
@@ -155,111 +156,151 @@
             </div>
         </section>
 
-        <section class="grid-con center-grid-con box">
+        <section class="grid-con center-grid-con" id="testimony">
             <img src="images/testimony1.png" class="col-span-1 m-col-start-2 m-col-end-5">
-            <p class="col-span-3 m-col-start-6 m-col-end-12">“Orbitz isn’t just a drink—it’s an experience. Nothing else looks or feels like it.”</p>
+            <p class="col-span-3 m-col-start-6 m-col-end-11">“Orbitz isn’t just a drink—it’s an experience. Nothing else looks or feels like it.”</p>
         </section>
 
         <section class="grid-con center-grid-con">
-            <h3 class="col-span-full center-box">Multi Packs</h3>
+            <h3 class="col-span-full center-box about-h">Multi Packs</h3>
             <img src="images/multipacks.png" class="hidden-box m-col-start-2 m-col-end-6" id="multipacks">
-            <p class="col-span-full m-col-start-7 m-col-end-12">Orbitz is an experience meant to be multiplied. Pick up a multi-pack of 24 bottles for when you’re hosting a galactic gala with your cosmic crew, giving the gift of fun-tastic flavour, or for when you just want to make your fridge more interesting. </p>
+            <p class="col-span-full m-col-start-7 m-col-end-12" id="multi-intro">Orbitz is an experience meant to be multiplied. Pick up a multi-pack of 24 bottles for when you’re hosting a galactic gala with your cosmic crew, giving the gift of fun-tastic flavour, or for when you just want to make your fridge more interesting. </p>
 
-            <div class="col-span-full m-col-start-1 m-col-end-7 ">
+            <div class="col-span-full m-col-start-1 m-col-end-7 product-card" id="blueberry-pack">
                 <h4>Blasting Blueberry</h4>
                 <img src="images/blue-box-desk.png">
                 <p><b>$9.99 CAD</b></p>
                 <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
-            <div class="col-span-full m-col-start-7 m-col-end-13">
+
+            <div class="col-span-full m-col-start-7 m-col-end-13 product-card" id="strawberry-pack">
                 <h4>Solar Strawberry</h4>
                 <img src="images/straw-box-desk.png">
                 <p><b>$9.99 CAD</b></p>
                 <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
-            <div class="col-span-full m-col-start-1 m-col-end-7 ">
+
+            <div class="col-span-full m-col-start-1 m-col-end-7 product-card" id="orange-pack">
                 <h4>Orbital Orange</h4>
                 <img src="images/orange-box-desk.png">
                 <p><b>$9.99 CAD</b></p>
                 <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
-            <div class="col-span-full m-col-start-7 m-col-end-13">
+
+            <div class="col-span-full m-col-start-7 m-col-end-13 product-card" id="lemon-pack">
                 <h4>Lunar Lemon</h4>
                 <img src="images/lemon-box-desk.png">
                 <p><b>$9.99 CAD</b></p>
                 <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
         </section>
 
-        <section class="grid-con center-grid-con">
-            <div class="col-span-full">
+        <section class="grid-con center-grid-con" id="galaxy-pack-con">
+            <div class="col-span-full" id="galaxy-pack-info-card">
                 <span>NEW!</span>
-                <h4>Orbitz Galaxy Pack</h4>
-                <p>Enjoy all four of your favourite Orbitz Classic flavours for the convenience of one!</p>
+                <h4 id="galaxy-h4" class="center-box">Orbitz Galaxy Pack</h4>
+                <p>Enjoy all four of your favourite Orbitz Classic flavours for the convenience of one!
+                <br>
+                <b>$9.99</b>
+                </p>
                 <img src="images/galaxy-pack-desk.png">
-                <p><b>$9.99 CAD</b></p>
-                <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
         </section>
 
         <section class="grid-con center-grid-con">
-            <h3 class="col-span-full center-box">Merchandise</h3>
-            <p class="col-span-full m-col-start-2 m-col-end-7">When you sign up to be part of our space crew you get exclusive access to an out-of-this-world line of merchandise that brings our signature Orbitz fun to your everyday items. </p>
+            <h3 class="col-span-full center-box about-h">Merchandise</h3>
+            <p class="col-span-full m-col-start-2 m-col-end-7" id="merch-intro">When you sign up to be part of our space crew you get exclusive access to an out-of-this-world line of merchandise that brings our signature Orbitz fun to your everyday items. </p>
             <img src="images/merch-desk.png" class="hidden-box m-col-start-8 m-col-end-12" id="merch">
 
             <section class="col-span-full m-col-start-2 m-col-end-12">
-                <div>
+                <div class="merch-card" id="ballcap">
                     <img src="images/ballcap.png">
                     <h4>Supersonic Snapback</h4>
                     <p>A high-profile, structured lid featuring vibrant neon embroidery designed to stand out in any orbit.</p>
-                    <button>Quantity</button>
-                    <button>Sign up to add to cart</button>
+                    <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div>
+                <div class="merch-card" id="tote">
                     <img src="images/tote.png">
                     <h4>Extra Terrestrial Tote Bag</h4>
                     <p>A rugged, oversized tote built from sustainable materials to handle the gravity of your heaviest daily hauls.</p>
-                    <button>Quantity</button>
-                    <button>Sign up to add to cart</button>
+                    <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div>
+                <div class="merch-card" id="tumbler">
                     <img src="images/tumbler.png">
                     <h4>Reusable Orbitz Tumbler</h4>
                     <p>Ditch the single-use plastics for this infinitely recyclable stainless steel canteen built to withstand a lifetime of cosmic adventures.</p>
-                    <button>Quantity</button>
-                    <button>Sign up to add to cart</button>
+                    <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div>
+                <div class="merch-card" id="keychain">
                     <img src="images/keychain.png">
                     <h4>Cosmic Keychain</h4>
                     <p>Forged from salvaged industrial metals, this rugged keychain adds a tactile, launch-ready pop to your gear while keeping waste out of the atmosphere.</p>
-                    <button>Quantity</button>
-                    <button>Sign up to add to cart</button>
+                    <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 </div>
             </section>
         </section>
