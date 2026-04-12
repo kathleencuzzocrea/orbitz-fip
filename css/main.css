@@ -736,6 +736,13 @@ footer ul li a {
     }
 
     /* -- Tablet Hero Image ------------------------ */
+    #hero-text{
+        display: block;
+    }
+
+    #hero-shop-now{
+        display: block;
+    }
 
     #nested-hero-grid h3{
         font-size: 50px;
