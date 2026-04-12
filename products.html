@@ -71,60 +71,87 @@
         </section>
 
         <section class="grid-con center-grid-con">
-            <h2 class="col-span-full center-box">Products</h2>
+            <h2 class="col-span-full center-box about-h">Products</h2>
+
             <p class="col-span-full m-col-start-2 m-col-end-12">Our number one priority with each and every Orbitz product is blending flavour and fun together to create an out-of-this-world experience.</p>
-            <h3 class="col-span-full center-box">Orbitz Classic</h3>
-            <div class="col-span-full m-col-start-1 m-col-end-7 ">
+
+            <h3 class="col-span-full center-box about-h">Orbitz Classic</h3>
+
+            <div class="col-span-full m-col-start-1 m-col-end-7 product-card" id="blueberry-product-card">
                 <h4>Blasting Blueberry</h4>
-                <p>Drift into a swirl of deep-space blueberry bliss. Rich, juicy, and slightly tangy, this flavor feels like floating through a glowing nebula of cosmic sweetness.</p>
-                <!-- change with media queries -->
+                <p>Drift into a swirl of deep-space blueberry bliss. Rich, juicy, and slightly tangy, this flavor feels like floating through a glowing nebula of cosmic sweetness.
+                <br>
+                <b>$2.99 CAD</b>    
+                </p>
+                
                 <img src="images/blue-bottle-mobile.png">
-                <p><b>$2.99 CAD</b></p>
+                
                 <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
-            <div class="col-span-full m-col-start-7 m-col-end-13">
+            <div class="col-span-full m-col-start-7 m-col-end-13 product-card" id="strawberry-product-card">
                 <h4>Solar Strawberry</h4>
-                <p>A stellar explosion of sweet strawberry flavor that bursts with energy. Bright, juicy, and impossible to ignore, this flavor lights up your taste buds like a supernova in full bloom.</p>
-                <!-- change with media queries -->
+                <p>A stellar explosion of sweet strawberry flavor that bursts with energy. Bright, juicy, and impossible to ignore, this flavor lights up your taste buds.
+                <br>
+                <b>$2.99 CAD</b>
+                </p>
                 <img src="images/strawb-bottle-mobile.png">
-                <p><b>$2.99 CAD</b></p>
                 <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
-            <div class="col-span-full m-col-start-1 m-col-end-7 ">
+            <div class="col-span-full m-col-start-1 m-col-end-7 product-card" id="orange-product-card">
                 <h4>Orbital Orange</h4>
-                <p>Take your taste buds on a citrus-powered journey. Orbital Orange delivers a radiant burst of zesty sweetness that circles smoothly into a refreshing finish.</p>
-                <!-- change with media queries -->
+                <p>Take your taste buds on a citrus-powered journey. Orbital Orange delivers a radiant burst of zesty sweetness that circles smoothly into a refreshing finish.
+                <br>
+                <b>$2.99 CAD</b>
+                </p>
+                
                 <img src="images/orange-bottle-mobile.png">
-                <p><b>$2.99 CAD</b></p>
                 <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
-            <div class="col-span-full m-col-start-7 m-col-end-13">
+            <div class="col-span-full m-col-start-7 m-col-end-13 product-card" id="lemon-product-card">
                 <h4>Lunar Lemon</h4>
-                <p>Blast off with a sharp, electrifying lemon zing. This flavor rockets in with tangy intensity, then glides into a crisp, refreshing finish. Clean, bright, and traveling at the speed of taste.</p>
-                <!-- change with media queries -->
+                <p>Blast off with a sharp, electrifying lemon zing. This flavor rockets in with tangy intensity, then glides into a crisp, refreshing finish.
+                <br>
+                <b>$2.99 CAD</b>
+                </p>
+                
                 <img src="images/lemon-bottle-mobile.png">
-                <p><b>$2.99 CAD</b></p>
                 <!-- js -->
-                <button>Quantity</button>
-                <button>Add to Cart</button>
+                <button class="quantity">Quantity
+                    <div class="plus">+</div>
+                    <div class="quantity-number">0</div>
+                    <div class="minus">-</div>
+                </button>
+                <button class="add-to-cart">Add to Cart</button>
                 <!-- toggle -->
-                <button>Classic</button>
-                <button>Zero Sugar</button>
+                <button class="classic">Classic</button>
+                <button class="zero-sugar">Zero Sugar</button>
             </div>
         </section>
 
@@ -239,9 +266,9 @@
     </main>
 
     <footer class="grid-con center-grid-con">
-        <img src="images/logoo.svg" alt="orbitz logo" class="col-start-1 col-end-2 m-col-span-2">
+        <img src="images/logoo.svg" alt="orbitz logo" class="col-start-1 col-end-3 m-col-span-2">
 
-            <ul class="col-start-2 col-end-4 m-col-span-8">
+            <ul class="col-start-1 col-end-3 m-col-start-5 m-col-end-9">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/products.html">Products</a></li>
                 <li><a href="/about.html">About</a></li>
@@ -249,15 +276,17 @@
                 <li><a href="#">Contact</a></li>
             </ul>
 
-        <!-- from icons8.com -->
-         
-            <img src="images/icons8-facebook.svg" alt="facebook icon" class="m-col-start-10 m-col-end-11 center-box">
-            <img src="images/icons8-instagram.svg" alt="instagram icon" class="m-col-start-11 m-col-end-12 center-box">
-            <img src="images/icons8-tiktok.svg" alt="tiktok icon" class="m-col-start-12 m-col-end-13 center-box">
-        
+            <div class="col-span-2" id="social-media">
+                <h4>Follow Us!</h4>
+                <img src="images/ig-instagram-icon.svg">
+                <img src="images/tiktok-rounded-square-icon.svg">
+                <img src="images/youtube-app-icon.svg">
+                <img src="images/facebook-square-icon.svg">
+            </div>
 
         <h3 class="col-span-full center-box">© Orbitz 2026</h3>
     </footer>
     
+    <script src="js/main.js"></script>
 </body>
 </html>
