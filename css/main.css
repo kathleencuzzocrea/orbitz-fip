@@ -168,6 +168,7 @@ header{
 
 .about-h{
     padding: 40px;
+    font-weight: 100;
 }
 
 #about-us{
@@ -184,6 +185,7 @@ header{
     line-height: 30px;
 }
 
+/* --- history section */
 #history-96{
     display: flex;
 }
@@ -224,14 +226,136 @@ header{
     order: 1;
 }
 
+#history{
+    background-color: #ed1a60;
+    color: white;
+}
+
+/* -- about the beverage section ----- */
+.about-bev-p{
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.blue-star-svg{
+    align-self: center;
+}
+
 .info-card{
     display: flex;
     background-color: #f1e902;
-    border-radius: 30px;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.info-card div{
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    border-radius: 50%;
+    width: 70px;
+    margin: 10px;
+    display: flex;
+    border: 5px solid #32327b;
+}
+
+.info-card div > img {
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card p {
+    align-self: center;
+}
+
+.info-card:nth-of-type(1) {
+    background-color: #3d62ad;
+    color: white;
+}
+
+.info-card:nth-of-type(2) {
+    background-color: #ed1a60;
+    color: white;
+}
+
+.info-card:nth-of-type(3){
+    background-color: #f47a20;
+    color: white;
+}
+
+/* -- FAQ ---- */
+#faq{
+    background-color: #f47a20;
+}
+
+#faq summary{
+    list-style: none;
+    /* background-color: white; */
+    /* padding: 30px; */
+    /* border-radius: 50px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#faq details{
+    background-color: white;
+    border-radius: 50px;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#faq details > p{
+    border-top: 1px solid #32327b;
+    padding-top: 10px;
+}
+
+#faq h2{
+    color: white;
+}
+
+/* -- fruit drag/drop section */
+#flavour-instructions{
+    line-height: 30px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.fruit-holder{
+    background-color: rgba(50, 50, 123,0.25);
+    border-radius: 100px;
+    padding: 20px;
+    border: 5px solid #32327b;
+    display: flex;
+    align-items: center;
 }
 
 .drop-zone-card{
     display: flex;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+#blue-drop-card{
+    background-color: rgba(61, 98, 173, 0.25);
+    border: 5px solid #3d62ad;
+}
+
+#straw-drop-card{
+    background-color: rgba(237, 26, 96, 0.25);
+    border: 5px solid #ed1a60;
+}
+
+#orange-drop-card{
+    background-color: rgba(244, 122, 32, 0.25);
+    border: 5px solid #f47a20;
+}
+
+#lemon-drop-card{
+    background-color: rgba(241, 233, 2, 0.25);
+    border: 5px solid #f1e902;
 }
 
 /* from https://css-generators.com/wavy-circle/ */
@@ -242,6 +366,29 @@ header{
   aspect-ratio: 1;
   --g:/calc(var(--s)*0.262) calc(var(--s)*0.262) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
   mask: calc(50% + var(--s)*0.197) calc(50% + var(--s)*0.271) var(--g),calc(50% + var(--s)*-0.197) calc(50% + var(--s)*0.271) var(--g),calc(50% + var(--s)*-0.319) calc(50% + var(--s)*-0.104) var(--g),calc(50% + var(--s)*0) calc(50% + var(--s)*-0.335) var(--g),calc(50% + var(--s)*0.319) calc(50% + var(--s)*-0.104) var(--g),radial-gradient(calc(var(--s)*0.371),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0) calc(50% + var(--s)*0.443) var(--g),calc(50% + var(--s)*-0.422) calc(50% + var(--s)*0.137) var(--g),calc(50% + var(--s)*-0.261) calc(50% + var(--s)*-0.359) var(--g),calc(50% + var(--s)*0.261) calc(50% + var(--s)*-0.359) var(--g),calc(50% + var(--s)*0.422) calc(50% + var(--s)*0.137) var(--g);
+}
+
+/* --- Footer ------------------------- */
+footer{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #32327b;
+    color: white;
+}
+
+footer > h3, h4{
+    font-weight: 100;
+}
+
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 /* --- Tablet Media Queries -------------------------*/
@@ -324,6 +471,7 @@ header{
     #star-26{
         order: 0;
     }
+
 }
 
 /* --Desktop Queries ------------------------------------ */
