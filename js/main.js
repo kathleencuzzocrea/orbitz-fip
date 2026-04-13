@@ -91,7 +91,7 @@ function addContent(){
 }
 
 // for image slider
-
+// if statement so it only runs on about page, breaks other pages if not
 if(window.location.pathname === "/about.html"){
     let slideWidth = slider.clientWidth;
     function showSlide(index) {
@@ -135,38 +135,34 @@ nextBtn.addEventListener("click", nextSlide);
 window.addEventListener("resize", updateSlideWidth);
 }
 
-// function showSlide(index) {
-//     console.log(index);
-//     const newTransformValue = -index * slideWidth + 'px';
-//     console.log(newTransformValue);
-//     slider.style.transform = `translateX(${newTransformValue})`;
-// }
+if (window.location.pathname === "/products.html"){
+    const classic = document.querySelectorAll(".classic");
+    const zero = document.querySelectorAll(".zero-sugar");
+    const changingImg = document.querySelectorAll(".product-card img");
 
-// function prevSlide() {
-//     currentIndex--;
-//     //if the count is less than 0, go to last slide
-//     if(currentIndex < 0) {
-//         currentIndex = slider.children.length-1;
-//     }
-//     showSlide(currentIndex);
-// }
-
-// function nextSlide() {
-//     currentIndex++;
-//     //if count is greate than or equal to the number of slides restart
-//     if(currentIndex >= slider.children.length) {
-//         currentIndex = 0;
-//     }
-//     showSlide(currentIndex);
-// }
-
-// function updateSlideWidth() {
-//     slideWidth = slider.clientWidth;
-//     showSlide(currentIndex);
-// }
+    const zeroImgs = [
+        "images/blue-zero-bottle.png",
+        "images/straw-zero-bottle.png",
+        "images/orange-zero-bottle.png",
+        "images/lemon-zero-bottle.png"
+    ]
 
 
-// updateSlideWidth();
+
+    console.log(zeroImgs);
+
+    // console.log(changingImg);
+    // console.log(classic);
+    // console.log(zero);
+
+    function changeImg(){
+       changingImg.src = zeroImgs[this];
+    }
+
+    zero.forEach(button => {
+        button.addEventListener("click", changeImg);
+    })
+}
 
 // ----- Event Listeners---------
 
