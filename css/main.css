@@ -171,8 +171,11 @@ header{
 #welcome{
     background-color: #ffffff;
     background-image: url(../images/blue-home-hero-divider.svg);
-    background-size: contain;
+    background-position: bottom center;
+    background-repeat: repeat;
     color: white;
+    background-size: 100% auto;
+    padding-bottom: 100px; 
 }
 
 #welcome div > h2{
@@ -283,8 +286,12 @@ header{
 #why-choose-orbitz{
     background-color: #ffffff;
     background-image: url(../images/pink-divider.svg);
-    background-size: contain;
+    background-position:center;
+    background-repeat: repeat;
+    background-size: 100% contain;
+    padding-bottom: 100px; 
     color: white;
+    height: 620px;
 }
 
 #why-choose-orbitz div {
@@ -361,8 +368,12 @@ header{
 #any-occasion{
     background-color: #ffffff;
     background-image: url(../images/orange-divider-home.svg);
-    background-size: contain;
+    background-position:center;
+    background-repeat: repeat;
+    background-size: 100% contain;
+    padding-bottom: 100px; 
     color: white;
+    height: 620px;
     padding: 30px 15px;
     line-height: 30px;
 }
@@ -470,7 +481,18 @@ input, textarea{
 
 #products-hero-text{
     color:white;
-    font-size: 30px;
+    font-size: 21px;
+    transition: all .5s ease;
+}
+
+#products-intro{
+    background-color: #ffffff;
+    background-image: url(../images/blue-home-hero-divider.svg);
+    background-position: bottom center;
+    background-repeat: repeat;
+    color: white;
+    background-size: 100% auto;
+    padding-bottom: 100px; 
 }
 
 .product-card{
@@ -591,7 +613,13 @@ input, textarea{
 
 #testimony{
     display: grid;
-    background-color: #ed1a60;
+    background-color: #fff;
+    background-image: url(../images/dark-blue-divider.svg);
+    background-position:center;
+    background-repeat: repeat;
+    background-size: 100% contain;
+    padding-bottom: 100px; 
+    height: 530px;
     color: white;
     font-size: 20px;
     padding: 15px;
@@ -600,6 +628,8 @@ input, textarea{
     align-items: center;
     line-height: 40px;
     margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #multi-intro{
@@ -643,7 +673,15 @@ input, textarea{
 }
 
 #galaxy-pack-con{
-    background-color: #32327b;
+    background-color: #fff;
+    background-image: url(../images/galaxy-pack-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #galaxy-pack-info-card{
@@ -730,8 +768,8 @@ div#galaxy-pack-info-card span {
 
 .merch-card{
     border: 5px solid #32327b;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column-gap: 30px;
@@ -846,8 +884,15 @@ div#galaxy-pack-info-card span {
 }
 
 #history{
-    background-color: #ed1a60;
+    background-color: #ffffff;
+    background-image: url(../images/history-bg-mobile.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 100px;
+    padding-bottom: 100px; 
     color: white;
+    /* height: 1000px; */
 }
 
 /* -- about the beverage section ----- */
@@ -960,6 +1005,7 @@ div#galaxy-pack-info-card span {
     padding: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #faq details > p{
@@ -1042,12 +1088,15 @@ div#galaxy-pack-info-card span {
 
 /* --- Footer ------------------------- */
 footer{
-    padding-top: 20px;
+    padding-top: 200px;
     display: flex;
     justify-content: space-evenly;
     background-color: #ffffff;
     background-image: url(../images/footer-bg.svg);
-    background-size: contain;
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    padding-bottom: 100px; 
     color: white;
 }
 
@@ -1227,6 +1276,18 @@ footer ul li a {
         display: block;
     }
 
+    #galaxy-pack-con{
+    background-color: #fff;
+    background-image: url(../images/galaxy-pack-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
     #galaxy-pack-info-card{
         background-color: white;
         margin: 30px;
@@ -1295,7 +1356,7 @@ footer ul li a {
     }
 
     .merch-card{
-       display: grid;
+        display: grid;
         grid-template-columns: repeat(9, minmax(0, 1fr));
         grid-column-gap: 30px;
     }
@@ -1312,6 +1373,18 @@ footer ul li a {
 
     /* ------------ ABOUT PAGE ------------------ */
 
+    #history{
+    background-color: #ffffff;
+    background-image: url(../images/pink-divider.svg);
+    background-position:center;
+    background-repeat: repeat;
+    background-size: 100% contain;
+    padding-top: 200px;
+    padding-bottom: 250px; 
+    color: white;
+    /* height: 1000px; */
+}
+
     #about-star{
         display: block;
     }
@@ -1322,6 +1395,19 @@ footer ul li a {
 
     #star-26{
         order: 0;
+    }
+
+    footer{
+        padding-top: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #ffffff;
+        background-image: url(../images/footer-bg.svg);
+        background-position: top center;
+        background-repeat: repeat;
+        background-size: 100% auto;
+        padding-bottom: 100px; 
+        color: white;
     }
 
 }
@@ -1338,6 +1424,10 @@ footer ul li a {
     }
 
     #hero-shop-now a{
+        font-size: 30px;
+    }
+
+    #products-hero-text{
         font-size: 30px;
     }
 }
