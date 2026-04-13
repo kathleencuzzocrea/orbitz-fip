@@ -8,7 +8,8 @@
 
 body {
     font-family: 'basic sans', sans-serif;
-    color:#32327b
+    color:#32327b;
+    background-color: rgb(255, 255, 255);
 }
 
 h2, h3, h4, h5, h6 {
@@ -458,7 +459,6 @@ input, textarea{
 }
 
 #blast-off:hover{
-    transform: translateY(-10px);
      animation: border-colour 1s ease-in-out;
     animation-iteration-count: infinite;
     cursor:pointer;
@@ -831,15 +831,29 @@ div#galaxy-pack-info-card span {
 #about-us{
     align-self: center;
     line-height: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#about-us-img{
+    align-self: center;
 }
 
 #about-us h2{
     margin-bottom: 20px;
 }
 
+video{
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 #step-in{
     align-self: center;
     line-height: 30px;
+    margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 /* --- history section */
@@ -887,10 +901,10 @@ div#galaxy-pack-info-card span {
     background-color: #ffffff;
     background-image: url(../images/history-bg-mobile.svg);
     background-position:center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 100px;
-    padding-bottom: 100px; 
+    background-repeat: repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px; 
     color: white;
     /* height: 1000px; */
 }
@@ -935,8 +949,8 @@ div#galaxy-pack-info-card span {
 
 .about-bev-p{
     line-height: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .blue-star-svg{
@@ -947,7 +961,7 @@ div#galaxy-pack-info-card span {
     display: flex;
     background-color: #f1e902;
     border-radius: 50px;
-    margin: 20px;
+    margin: 60px 20px;
 }
 
 .info-card div{
@@ -970,47 +984,49 @@ div#galaxy-pack-info-card span {
     align-self: center;
 }
 
-.info-card:nth-of-type(1) {
+#made-in-canada{
     background-color: #3d62ad;
     color: white;
 }
 
-.info-card:nth-of-type(2) {
+#natural-leaf{
     background-color: #ed1a60;
     color: white;
 }
 
-.info-card:nth-of-type(3){
+/* .info-card:nth-of-type(3){
     background-color: #f47a20;
     color: white;
+} */
+
+#recyclable{
+    background-color: #f47a20;
+    color:white;
 }
 
 /* -- FAQ ---- */
 #faq{
     background-color: #ffffff;
-    background-image: url(../images/faq-bg.svg);
+    background-image: url(../images/faq-bg-mobile.png);
     background-position:center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    padding-top: 400px;
-    padding-bottom: 500px; 
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 #faq summary{
     list-style: none;
-    /* background-color: white; */
-    /* padding: 30px; */
-    /* border-radius: 50px; */
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 #faq details{
     background-color: white;
-    border-radius: 50px;
+    border-radius: 100px;
     padding: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
@@ -1066,15 +1082,23 @@ div#galaxy-pack-info-card span {
     border: 5px solid #f1e902;
 }
 
+#outro{
+    align-items: center;
+    margin-bottom: 100px;
+    line-height: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
 /* from https://css-generators.com/wavy-circle/ */
-.wavy-circle {
-  --s: 100px; /* adjust to control the size */
+/* .wavy-circle {
+  --s: 100px;
     background-color: #3d62ad;
   width: var(--s); 
   aspect-ratio: 1;
   --g:/calc(var(--s)*0.262) calc(var(--s)*0.262) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
   mask: calc(50% + var(--s)*0.197) calc(50% + var(--s)*0.271) var(--g),calc(50% + var(--s)*-0.197) calc(50% + var(--s)*0.271) var(--g),calc(50% + var(--s)*-0.319) calc(50% + var(--s)*-0.104) var(--g),calc(50% + var(--s)*0) calc(50% + var(--s)*-0.335) var(--g),calc(50% + var(--s)*0.319) calc(50% + var(--s)*-0.104) var(--g),radial-gradient(calc(var(--s)*0.371),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0) calc(50% + var(--s)*0.443) var(--g),calc(50% + var(--s)*-0.422) calc(50% + var(--s)*0.137) var(--g),calc(50% + var(--s)*-0.261) calc(50% + var(--s)*-0.359) var(--g),calc(50% + var(--s)*0.261) calc(50% + var(--s)*-0.359) var(--g),calc(50% + var(--s)*0.422) calc(50% + var(--s)*0.137) var(--g);
-}
+} */
 
 /* from https://css-shape.com/star/ */
 .star {
@@ -1127,6 +1151,10 @@ footer ul li a {
 /* --- Tablet Media Queries -------------------------*/
 
 @media screen and (min-width: 768px) {
+
+    p{
+        font-size: 18px;
+    }
     
     .hidden-box{
         display: block;
@@ -1383,26 +1411,40 @@ footer ul li a {
         font-size: 50px;
     }
 
-    #faq{
+#faq{
     background-color: #ffffff;
-    background-image: url(../images/faq-bg-dek.png);
+    background-image: url(../images/faq-bg.svg);
     background-position:center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    padding-top: 200px;
-    padding-bottom: 300px; 
+    background-size: 100% cover;
+    padding-top: 350px;
+    padding-bottom: 350px;
+}
+
+#faq summary{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#faq details{
+    background-color: white;
+    border-radius: 100px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
     #history{
     background-color: #ffffff;
-    background-image: url(../images/pink-divider.svg);
+    background-image: url(../images/history-bg-tablet.svg);
     background-position:center;
-    background-repeat: repeat;
-    background-size: 100% contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 250px; 
     color: white;
-    /* height: 1000px; */
 }
 
     #about-star{
@@ -1410,11 +1452,11 @@ footer ul li a {
     }
 
     #star-97{
-        order: 0;
+        order: 1;
     }
 
     #star-26{
-        order: 0;
+        order: 1;
     }
 
     footer{
@@ -1435,6 +1477,10 @@ footer ul li a {
 /* --Desktop Queries ------------------------------------ */
 
 @media screen and (min-width: 1200px){
+    p{
+        font-size: 22px;
+    }
+
     #hero-text{
         padding-top: 80px;
     }
@@ -1454,4 +1500,45 @@ footer ul li a {
     .about-hero-text h2{
         font-size: 60px;
     }
+
+        #history{
+    background-color: #ffffff;
+    background-image: url(../images/pink-divider.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% contain;
+    padding-top: 50px;
+    padding-bottom: 100px; 
+    color: white;
+    /* height: 1000px; */
+}
+
+#history p{
+    font-size: 18px;
+}
+
+#faq{
+    background-color: #ffffff;
+    background-image: url(../images/faq-bg-dek.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% cover;
+    padding-top: 350px;
+    padding-bottom: 350px;
+}
+
+#faq summary{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#faq details{
+    background-color: white;
+    border-radius: 100px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
 }
