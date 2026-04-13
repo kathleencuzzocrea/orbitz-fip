@@ -987,7 +987,13 @@ div#galaxy-pack-info-card span {
 
 /* -- FAQ ---- */
 #faq{
-    background-color: #f47a20;
+    background-color: #ffffff;
+    background-image: url(../images/faq-bg.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 400px;
+    padding-bottom: 500px; 
 }
 
 #faq summary{
@@ -1373,6 +1379,20 @@ footer ul li a {
 
     /* ------------ ABOUT PAGE ------------------ */
 
+    .about-hero-text h2{
+        font-size: 50px;
+    }
+
+    #faq{
+    background-color: #ffffff;
+    background-image: url(../images/faq-bg-dek.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 200px;
+    padding-bottom: 300px; 
+}
+
     #history{
     background-color: #ffffff;
     background-image: url(../images/pink-divider.svg);
@@ -1429,5 +1449,9 @@ footer ul li a {
 
     #products-hero-text{
         font-size: 30px;
+    }
+
+    .about-hero-text h2{
+        font-size: 60px;
     }
 }
