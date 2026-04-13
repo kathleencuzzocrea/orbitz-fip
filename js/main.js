@@ -159,7 +159,7 @@ if (window.location.pathname === "/products.html"){
 
     zero.forEach(button => {
         button.addEventListener("click", changeImg);
-    })
+    });
 }
 
 // ----- Event Listeners---------

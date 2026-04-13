@@ -177,7 +177,7 @@ header{
     background-position: bottom center;
     background-repeat: repeat;
     color: white;
-    background-size: 100% auto;
+    background-size:  cover;
     padding-bottom: 100px; 
 }
 
@@ -266,12 +266,10 @@ header{
 
 .lightbox_close{
     text-decoration:none;
-    color: white;
+    color: #32327b;
     font-size: 40px;
     font-family: 'bagel fat', sans-serif;
     font-weight: 100;
-    -webkit-text-stroke: 5px #32327b;
-    paint-order: stroke;
 }
 
 .lightbox0{
@@ -290,11 +288,15 @@ header{
     background-color: #ffffff;
     background-image: url(../images/pink-divider.svg);
     background-position:center;
-    background-repeat: repeat;
-    background-size: 100% contain;
-    padding-bottom: 100px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px; 
     color: white;
     height: 620px;
+}
+
+#why-choose-orbitz p {
+    line-height: 50px;
 }
 
 #why-choose-orbitz div {
@@ -373,7 +375,7 @@ header{
     background-image: url(../images/orange-divider-home.svg);
     background-position:center;
     background-repeat: repeat;
-    background-size: 100% contain;
+    background-size: cover;
     padding-bottom: 100px; 
     color: white;
     height: 620px;
@@ -485,6 +487,8 @@ input, textarea{
     color:white;
     font-size: 21px;
     transition: all .5s ease;
+    -webkit-text-stroke: 10px #32327b;
+    paint-order: stroke; 
 }
 
 #products-intro{
@@ -620,8 +624,8 @@ input, textarea{
     background-color: #fff;
     background-image: url(../images/dark-blue-divider.svg);
     background-position:center;
-    background-repeat: repeat;
-    background-size: 100% contain;
+    background-repeat: no-repeat;
+    background-size:  contain;
     padding-bottom: 100px; 
     height: 530px;
     color: white;
@@ -821,6 +825,9 @@ div#galaxy-pack-info-card #new {
     font-size: 40px;
     font-family: 'bagel fat', sans-serif;
     color: white;
+    -webkit-text-stroke: 10px #32327b;
+    paint-order: stroke;
+    padding: 30px
 }
 
 .about-hero-text h2:nth-of-type(2){
@@ -1014,7 +1021,7 @@ video{
     background-image: url(../images/faq-bg-mobile.png);
     background-position:center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     padding-top: 150px;
     padding-bottom: 150px;
 }
@@ -1094,7 +1101,7 @@ video{
     margin-top: 0;
 }
 
-/* was going to be used for the drag and drop game */
+/* was going to be used for the drag and drop game, i plan on getting it to work when i have the time */
 /* from https://css-generators.com/wavy-circle/ */
 /* .wavy-circle {
   --s: 100px;
@@ -1336,7 +1343,7 @@ footer ul li a {
     padding-top: 15px;
     line-height:  30px;
     padding-left: 10px;
-    font-size: auto;
+    font-size: 18px;
 }
  
 
@@ -1355,7 +1362,6 @@ footer ul li a {
         position: absolute;
         font-family: 'bagel fat';
         font-size: 60px;
-        transform: translateX();
     }
 
     div#galaxy-pack-info-card #new {
@@ -1434,7 +1440,7 @@ footer ul li a {
     background-image: url(../images/faq-bg.svg);
     background-position:center;
     background-repeat: no-repeat;
-    background-size: 100% cover;
+    background-size: cover;
     padding-top: 350px;
     padding-bottom: 350px;
 }
@@ -1524,7 +1530,7 @@ footer ul li a {
     background-image: url(../images/pink-divider.svg);
     background-position:center;
     background-repeat: no-repeat;
-    background-size: 100% contain;
+    background-size: contain;
     padding-top: 50px;
     padding-bottom: 100px; 
     color: white;
@@ -1540,8 +1546,8 @@ footer ul li a {
     background-image: url(../images/faq-bg-dek.png);
     background-position:center;
     background-repeat: no-repeat;
-    background-size: 100% cover;
-    padding-top: 350px;
+    background-size: cover;
+    padding-top: 400px;
     padding-bottom: 350px;
 }
 
