@@ -16,7 +16,15 @@ const lightBox = document.querySelector("#lightbox");
 const stars = document.querySelectorAll("#bottle-info div a");
 const content = document.querySelector("#lightbox article");
 
-// console.log(stars);
+// for img slider
+// from week 12
+const slider = document.querySelector("#image-slider");
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+// let slideWidth = slider.clientWidth;
+let currentIndex = 0;
+
+
 
 let drinkInfo = [
     {
@@ -29,7 +37,7 @@ let drinkInfo = [
     },
     {
         title: "Futuristic Flavours",
-        description: "Orbitz currently comes in four different fantastic flavours: Blasting Blueberry, Solar Strawberry, Orbital Orange, and Lunar Lemon"
+        description: "Orbitz currently comes in four different fantastic flavours: Blasting Blueberry, Solar Strawberry, Orbital Orange, and Lunar Lemon. We currently offer all four flavours in classic and zero-sugar variants."
     }
 ];
 
@@ -82,6 +90,84 @@ function addContent(){
     content.appendChild(drinkDesc);
 }
 
+// for image slider
+
+if(window.location.pathname === "/about.html"){
+    let slideWidth = slider.clientWidth;
+    function showSlide(index) {
+    console.log(index);
+    const newTransformValue = -index * slideWidth + 'px';
+    console.log(newTransformValue);
+    slider.style.transform = `translateX(${newTransformValue})`;
+}
+
+function prevSlide() {
+    currentIndex--;
+    //if the count is less than 0, go to last slide
+    if(currentIndex < 0) {
+        currentIndex = slider.children.length-1;
+    }
+    showSlide(currentIndex);
+}
+
+function nextSlide() {
+    currentIndex++;
+    //if count is greate than or equal to the number of slides restart
+    if(currentIndex >= slider.children.length) {
+        currentIndex = 0;
+    }
+    showSlide(currentIndex);
+}
+
+function updateSlideWidth() {
+    slideWidth = slider.clientWidth;
+    showSlide(currentIndex);
+}
+
+
+updateSlideWidth();
+
+// event listeners
+
+prevBtn.addEventListener("click", prevSlide);
+nextBtn.addEventListener("click", nextSlide);
+
+window.addEventListener("resize", updateSlideWidth);
+}
+
+// function showSlide(index) {
+//     console.log(index);
+//     const newTransformValue = -index * slideWidth + 'px';
+//     console.log(newTransformValue);
+//     slider.style.transform = `translateX(${newTransformValue})`;
+// }
+
+// function prevSlide() {
+//     currentIndex--;
+//     //if the count is less than 0, go to last slide
+//     if(currentIndex < 0) {
+//         currentIndex = slider.children.length-1;
+//     }
+//     showSlide(currentIndex);
+// }
+
+// function nextSlide() {
+//     currentIndex++;
+//     //if count is greate than or equal to the number of slides restart
+//     if(currentIndex >= slider.children.length) {
+//         currentIndex = 0;
+//     }
+//     showSlide(currentIndex);
+// }
+
+// function updateSlideWidth() {
+//     slideWidth = slider.clientWidth;
+//     showSlide(currentIndex);
+// }
+
+
+// updateSlideWidth();
+
 // ----- Event Listeners---------
 
 // for burger con
@@ -98,3 +184,9 @@ subtract.forEach(minus => {
 
 // for homepage bottle hot spots
 stars.forEach(star => star.addEventListener("click", addContent));
+
+// for image slider
+// prevBtn.addEventListener("click", prevSlide);
+// nextBtn.addEventListener("click", nextSlide);
+
+// window.addEventListener("resize", updateSlideWidth);
