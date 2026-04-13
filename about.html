@@ -104,21 +104,62 @@
 
         <section class="grid-con center-grid-con">
             <h2 class="col-span-full center-box about-h" >About the Beverage</h2>
-            <img class="col-span-full"
-                sizes="(max-width: 1200px) 100vw, 1200px"
-                srcset="
-                images/fun-figma_p3rprr_c_scale,w_400.png 400w,
-                images/fun-figma_p3rprr_c_scale,w_552.png 552w,
-                images/fun-figma_p3rprr_c_scale,w_674.png 674w,
-                images/fun-figma_p3rprr_c_scale,w_787.png 787w,
-                images/fun-figma_p3rprr_c_scale,w_881.png 881w,
-                images/fun-figma_p3rprr_c_scale,w_968.png 968w,
-                images/fun-figma_p3rprr_c_scale,w_1050.png 1050w,
-                images/fun-figma_p3rprr_c_scale,w_1126.png 1126w,
-                images/fun-figma_p3rprr_c_scale,w_1177.png 1177w,
-                images/fun-figma_p3rprr_c_scale,w_1200.png 1200w"
-                src="fun-figma_p3rprr_c_scale,w_1200.png"
-            alt="">
+            <div class="col-span-full">
+                <div id="slider-con">
+                    <div id="image-slider">
+                        <img class="slider-img"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            srcset="
+                            images/fun-figma_p3rprr_c_scale,w_400.png 400w,
+                            images/fun-figma_p3rprr_c_scale,w_552.png 552w,
+                            images/fun-figma_p3rprr_c_scale,w_674.png 674w,
+                            images/fun-figma_p3rprr_c_scale,w_787.png 787w,
+                            images/fun-figma_p3rprr_c_scale,w_881.png 881w,
+                            images/fun-figma_p3rprr_c_scale,w_968.png 968w,
+                            images/fun-figma_p3rprr_c_scale,w_1050.png 1050w,
+                            images/fun-figma_p3rprr_c_scale,w_1126.png 1126w,
+                            images/fun-figma_p3rprr_c_scale,w_1177.png 1177w,
+                            images/fun-figma_p3rprr_c_scale,w_1200.png 1200w"
+                        src="fun-figma_p3rprr_c_scale,w_1200.png"
+                        alt="Two astronauts dancing on top of an Orbitz bottle with text that reads 'Space exploration has never been so fun!'">
+
+                        <img class="slider-img"
+                            sizes="(max-width: 1200px) 100vw, 1200px"
+                            srcset="
+                            images/cosmos-poster_n0qjth_c_scale,w_400.png 400w,
+                            images/cosmos-poster_n0qjth_c_scale,w_546.png 546w,
+                            images/cosmos-poster_n0qjth_c_scale,w_666.png 666w,
+                            images/cosmos-poster_n0qjth_c_scale,w_775.png 775w,
+                            images/cosmos-poster_n0qjth_c_scale,w_869.png 869w,
+                            images/cosmos-poster_n0qjth_c_scale,w_956.png 956w,
+                            images/cosmos-poster_n0qjth_c_scale,w_1038.png 1038w,
+                            images/cosmos-poster_n0qjth_c_scale,w_1114.png 1114w,
+                            images/cosmos-poster_n0qjth_c_scale,w_1188.png 1188w,
+                            images/cosmos-poster_n0qjth_c_scale,w_1200.png 1200w"
+                            src="cosmos-poster_n0qjth_c_scale,w_1200.png"
+                            alt="Four Orbitz bottles in a line against an outer space background with text that reads 'Consume the cosmos.' ">
+                        <img class="slider-img"
+                                sizes="(max-width: 1200px) 100vw, 1200px"
+                                srcset="
+                                images/tastebuds-poster_rnnz05_c_scale,w_400.png 400w,
+                                images/tastebuds-poster_rnnz05_c_scale,w_541.png 541w,
+                                images/tastebuds-poster_rnnz05_c_scale,w_663.png 663w,
+                                images/tastebuds-poster_rnnz05_c_scale,w_766.png 766w,
+                                images/tastebuds-poster_rnnz05_c_scale,images/w_857.png 857w,
+                                images/tastebuds-poster_rnnz05_c_scale,w_944.png 944w,
+                                images/tastebuds-poster_rnnz05_c_scale,w_1025.png 1025w,
+                                images/tastebuds-poster_rnnz05_c_scale,w_1099.png 1099w,
+                                images/tastebuds-poster_rnnz05_c_scale,w_1174.png 1174w,
+                                images/tastebuds-poster_rnnz05_c_scale,w_1200.png 1200w"
+                                src="tastebuds-poster_rnnz05_c_scale,w_1200.png"
+                                alt="Blue orbitz bottle in front of text that reads 'Send your tastebuds to outer space. Drink an Orbitz.">
+                                 <!-- <button id="prev-btn">&#10094; Previous</button>
+                                <button id="next-btn">Next &#10095;</button> -->
+                        </div>
+                        <button id="prev-btn">&#10094; Previous</button>
+                                <button id="next-btn">Next &#10095;</button>
+                    </div>
+                </div>
 
             <p class="col-span-3 m-col-start-2 m-col-end-8 about-bev-p">Orbitz is more than just a beverage; it is a sensory voyage through flavor and physics. Created by the visionaries at Clearly Canadian, Orbitz is designed for those who want to taste the future—and chew it a little, too.</p>
             <img src="images/blue-star-svg.svg" class="col-span-1 m-col-start-10 m-col-end-12 center-box blue-star-svg">
@@ -242,5 +283,7 @@
 
         <h3 class="col-span-full center-box">© Orbitz 2026</h3>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

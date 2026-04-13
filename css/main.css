@@ -123,17 +123,6 @@ header{
     color: white;
 }
 
-/* #hero-shop-now a{
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    transition: all .5s ease-in-out;
-    text-decoration: none;
-    color: #32327b;
-    align-self: end;
-    border: 5px solid #32327b
-} */
-
 #hero-button{
     border: 5px solid white;
     background-color: white;
@@ -180,7 +169,9 @@ header{
 }
 
 #welcome{
-    background-color: #32327b;
+    background-color: #ffffff;
+    background-image: url(../images/blue-home-hero-divider.svg);
+    background-size: contain;
     color: white;
 }
 
@@ -264,6 +255,7 @@ header{
 .lightbox:target { 
     display: block; 
     opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 .lightbox_close{
@@ -289,7 +281,9 @@ header{
 }
 
 #why-choose-orbitz{
-    background-color: #ed1a60;
+    background-color: #ffffff;
+    background-image: url(../images/pink-divider.svg);
+    background-size: contain;
     color: white;
 }
 
@@ -365,7 +359,9 @@ header{
 }
 
 #any-occasion{
-    background-color: #f47a20;
+    background-color: #ffffff;
+    background-image: url(../images/orange-divider-home.svg);
+    background-size: contain;
     color: white;
     padding: 30px 15px;
     line-height: 30px;
@@ -474,6 +470,7 @@ input, textarea{
 
 #products-hero-text{
     color:white;
+    font-size: 30px;
 }
 
 .product-card{
@@ -854,6 +851,43 @@ div#galaxy-pack-info-card span {
 }
 
 /* -- about the beverage section ----- */
+
+#slider-con{
+    overflow: hidden;
+    position: relative;
+}
+
+#image-slider{
+    display: flex;
+    transition: transform .5s ease-in-out;
+}
+
+.slider-img{
+    max-width: 100%;
+    height: auto;
+}
+
+#prev-btn,#next-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:15px;
+    cursor:pointer;
+    padding:20px;
+    border:none;
+    background-color:rgba(255,255,255,.6);
+    font-family: 'basic sans';
+    color:#32327b;
+}
+
+#prev-btn{
+    left:0px;
+}
+
+#next-btn{
+    right:0px;
+}
+
 .about-bev-p{
     line-height: 30px;
     margin-top: 15px;
@@ -1011,7 +1045,9 @@ footer{
     padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
-    background-color: #32327b;
+    background-color: #ffffff;
+    background-image: url(../images/footer-bg.svg);
+    background-size: contain;
     color: white;
 }
 
@@ -1138,6 +1174,49 @@ footer ul li a {
         margin-top: 7px;
         margin-bottom: 7px;
     }
+
+    .lightbox0 {
+        grid-column: 1/5;
+        margin: 0;
+        position: absolute;
+        text-align: right;
+        top: 5%;
+        background-color: rgba(237, 26, 96, 0.45);
+    }
+
+    .lightbox1{
+        grid-column: 1/5;
+        margin: 0;
+        position: absolute;
+        text-align: right;
+        top: 20%;
+        background-color: rgba(244, 122, 32, 0.45);
+    }
+
+    .lightbox2{
+        grid-column: 9/13;
+        margin: 0;
+        position: absolute;
+        text-align: right;
+        top: 15%;
+        background-color: rgba(241, 233, 2, 0.45);
+        text-align: left;
+    }
+
+    #technology{
+        top: 16%;
+        left: 38%;
+    }
+
+    #sustainability{
+        top: 51%;
+        left: 37%;
+    }
+
+    #flavours{
+        top: 31%;
+    }
+
 
     /* ------------ PRODUCTS PAGE -------------- */
     #multipacks{
