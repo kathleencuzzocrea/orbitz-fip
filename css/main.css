@@ -20,7 +20,7 @@ html {
 }
 
 .center-box{
-justify-self: center;
+    justify-self: center;
 }
 
 .hidden-box{
@@ -87,8 +87,8 @@ justify-self: center;
 }
 
 header{
-    background-color: #ffffff;
-    box-shadow: 0 5px 30px #32327b;
+    background-color: #32327b;
+    /* box-shadow: 0 5px 30px #32327b; */
 }
 
 /* --3-- Hero Image ---------------------------- */
@@ -201,6 +201,91 @@ header{
 #home-welcome{
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+/* ------------ homepage bottle and hotspots -----------*/
+
+#bottle-info {
+    position: relative;
+}
+
+.home-info-hotspot{
+    position: absolute;
+}
+
+.home-info-hotspot a{
+    font-size: 30px;
+    position: absolute;
+    top: 29px;
+    left: 29px;
+    text-decoration: none;
+}
+
+#hotspot-info-text{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#technology{
+    top: 15%;
+    left: 34%;
+    background-color: rgba(237, 26, 96, 0.55);
+}
+
+#technology-info{
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+#sustainability{
+    top: 55%;
+    left: 33%;
+    background-color: rgba(244, 122, 32, 0.55);
+}
+
+#flavours{
+    top: 40%;
+    left: 52%;
+}
+
+.lightbox{
+    background-color: rgba(50, 50, 123, 0.5);
+    position: absolute;
+    top: 25%;
+    display:none;
+    padding: 20px;
+    line-height: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+}
+
+.lightbox:target { 
+    display: block; 
+    opacity: 1;
+}
+
+.lightbox_close{
+    text-decoration:none;
+    color: white;
+    font-size: 40px;
+    font-family: 'bagel fat', sans-serif;
+    font-weight: 100;
+    -webkit-text-stroke: 5px #32327b;
+    paint-order: stroke;
+}
+
+.lightbox0{
+    background-color: rgba(237, 26, 96, 0.75);
+}
+
+.lightbox1{
+    background-color: rgba(244, 122, 32, 0.75);
+}
+
+.lightbox2{
+    background-color: rgba(241, 233, 2, 0.75);
 }
 
 #why-choose-orbitz{
@@ -907,9 +992,9 @@ div#galaxy-pack-info-card span {
 
 /* from https://css-shape.com/star/ */
 .star {
-  width: 300px;  
+  width: 100px;
   aspect-ratio: 1;
-  background: #F8CA00;
+  background: rgba(241, 233, 2, 0.55);
   clip-path: polygon(50% 0,
     calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
     calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
@@ -960,11 +1045,17 @@ footer ul li a {
     #cart{
         display: block;
         padding: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        align-self: center;
     }
 
     #pfp{
         display: block;
         padding: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        align-self: center;
     }
 
     #logo{
@@ -986,7 +1077,7 @@ footer ul li a {
 
     #nav-links li a{
         text-decoration: none;
-        color: #32327b;
+        color: #ffffff;
         transition: 0.2s all ease-in-out;
         font-size: 18px;
     }

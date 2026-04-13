@@ -84,12 +84,30 @@
         </section>
 
         <section class="grid-con center-grid-con" id="bottle-info">
-            <img class="col-start-2 col-end-4 m-col-start-5 m-col-end-9" src="images/straw-no-bg.png">
-            <div class="home-info-hotspot star" id="technology"></div>
-            <div class="home-info-hotspot" id="sustainability"></div>
-            <div class="home-info-hotspot" id="flavours"></div>
+            <img class="col-start-2 col-end-4 m-col-start-5 m-col-end-9" src="images/straw-no-bg.png" id="clickable-bottle">
+            <div class="home-info-hotspot star" id="technology">
+                <a href="#lightbox" data-drink-index="0">⭐</a>
+            </div>
 
-            <p>Click the star shaped hot spots on the bottle to learn about Orbitz</p>
+            <div class="home-info-hotspot star" id="sustainability">
+                <a href="#lightbox" data-drink-index="1">⭐</a>
+            </div>
+
+            <div class="home-info-hotspot star" id="flavours">
+                <a href="#lightbox" data-drink-index="2">⭐</a>
+            </div>
+
+            <h3 class="col-span-full center-box" id="hotspot-info-text">Click the star shaped hot spots on the bottle to learn more about Orbitz!</h3>
+
+            
+            <section class="lightbox" id="lightbox">
+        
+                <a href="#bottle-info" class="lightbox_close">x</a>
+
+                <article>
+                    <h3 class="lb_heading"></h3>
+                </article>
+            </section>
         </section>
         
         <section class="grid-con center-grid-con" id="why-choose-orbitz">
