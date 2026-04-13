@@ -147,8 +147,6 @@ if (window.location.pathname === "/products.html"){
         "images/lemon-zero-bottle.png"
     ]
 
-
-
     console.log(zeroImgs);
 
     // console.log(changingImg);
@@ -181,7 +179,7 @@ subtract.forEach(minus => {
 // for homepage bottle hot spots
 stars.forEach(star => star.addEventListener("click", addContent));
 
-// for image slider
+// for image slider, moved into if statment 
 // prevBtn.addEventListener("click", prevSlide);
 // nextBtn.addEventListener("click", nextSlide);
 

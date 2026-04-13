@@ -52,7 +52,7 @@ html {
     margin-bottom: 20px;
 }
 
-#button button.expanded{
+#button.expanded{
     transform: rotate(90deg);
 }
 
@@ -76,6 +76,8 @@ html {
     display: block;
     padding: 10px 0 10px 0;
     text-align: center;
+    color:white;
+    text-decoration: none;
 }
 
 #logo{
@@ -511,8 +513,10 @@ input, textarea{
 
 .product-card p{
     grid-column: 1/3;
-    /* padding-top: 30px; */
-    line-height:  30px;
+    padding-top: 40px;
+    line-height:  40px;
+    padding-left: 30px;
+    font-size: 20px;
 }
 
 .product-card img{
@@ -674,12 +678,12 @@ input, textarea{
 
 #galaxy-pack-con{
     background-color: #fff;
-    background-image: url(../images/galaxy-pack-bg.svg);
+    background-image: url(../images/galaxy-bg-mobile.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
@@ -691,21 +695,21 @@ input, textarea{
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column-gap: 30px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     position: relative;
     padding-left: 80px;
     padding-right: 80px;
 }
 
-#galaxy-pack-info-card span{
+#galaxy-pack-info-card #new{
     position: absolute;
     font-family: 'bagel fat';
     font-size: 60px;
     transform: translateX(50px) rotate(-25deg);
 }
 
-div#galaxy-pack-info-card span {
+div#galaxy-pack-info-card #new {
     color: #32327b;
     -webkit-text-stroke: 10px white;
     paint-order: stroke;
@@ -728,7 +732,7 @@ div#galaxy-pack-info-card span {
     grid-column: span 4;
 }
 
-#galaxy-pack-info-card span{
+#galaxy-pack-info-card #new{
     color: white;
 }
 
@@ -1090,6 +1094,7 @@ video{
     margin-top: 0;
 }
 
+/* was going to be used for the drag and drop game */
 /* from https://css-generators.com/wavy-circle/ */
 /* .wavy-circle {
   --s: 100px;
@@ -1154,6 +1159,10 @@ footer ul li a {
 
     p{
         font-size: 18px;
+    }
+
+    #logo{
+        order: -1;
     }
     
     .hidden-box{
@@ -1322,6 +1331,15 @@ footer ul li a {
     margin-bottom: 40px;
 }
 
+.product-card p{
+    grid-column: 1/3;
+    padding-top: 15px;
+    line-height:  30px;
+    padding-left: 10px;
+    font-size: auto;
+}
+ 
+
     #galaxy-pack-info-card{
         background-color: white;
         margin: 30px;
@@ -1333,14 +1351,14 @@ footer ul li a {
         position: relative;
     }
 
-    #galaxy-pack-info-card span{
+    #galaxy-pack-info-card #new{
         position: absolute;
         font-family: 'bagel fat';
         font-size: 60px;
         transform: translateX();
     }
 
-    div#galaxy-pack-info-card span {
+    div#galaxy-pack-info-card #new {
         color: #32327b;
         -webkit-text-stroke: 10px white;
         paint-order: stroke;
@@ -1362,7 +1380,7 @@ footer ul li a {
         grid-column: 3/5;
     }
 
-    #galaxy-pack-info-card span{
+    #galaxy-pack-info-card #new{
         color: white;
     }
 
